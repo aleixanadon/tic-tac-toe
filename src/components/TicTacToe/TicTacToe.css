@@ -1,0 +1,28 @@
+
+:root {
+  --square-size: 4.5vh;
+}
+
+.tictactoe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+  width: var(--square-size);
+  height: var(--square-size);
+  text-align: center;
+  margin: 0.3em;
+  padding: var(--square-size);
+  font-size: 2em;
+  text-align: center;
+  background-color: rgb(231, 231, 231);
+  border-radius: 10px;
+}
