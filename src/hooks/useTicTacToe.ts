@@ -26,7 +26,7 @@ const useTicTacToe = () => {
 
   const checkRows = (row: string[]) => {
     if (row[0] == '') { return false }
-    let allEqual = row.every((el, index, arr) => el === arr[0]);
+    let allEqual = row.every((el, _index, arr) => el === arr[0]);
     return allEqual;
   };
 
